@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Alejandro Gutiérrez"]
   spec.email = ["alejandrodevs@gmail.com"]
 
-  spec.summary = "Setting Object for extending configuration"
-  spec.description = "Setting Object for extending configuration"
+  spec.summary = "Settings object for extending configuration"
+  spec.description = "Settings object for extending configuration"
   spec.homepage = "https://github.com/amco/yondu-rb"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.7.0"

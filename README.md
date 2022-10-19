@@ -1,4 +1,4 @@
-# Yondu - Setting Object for extending configuration
+# Yondu - Settings object for extending configuration
 
 This gem aims to provide a simple wrapper over configuration objects in
 ruby applications.
