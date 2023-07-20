@@ -47,7 +47,10 @@ Rails.configuration.settings.get(:app, :port)
 # => 443
 
 Rails.configuration.settings.get(:app, :use_ssl)
-# => Missing setting: app->use_ssl (Yondu::MissingSetting)
+# => Missing setting: app->use_ssl (Yondu::MissingSettingError)
+
+Rails.configuration.settings.get(:app, :port, :other)
+# => No hash setting: app->port (Yondu::NoHashSettingError)
 ```
 
 ## Development
