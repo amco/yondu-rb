@@ -7,13 +7,13 @@ module Yondu
 
   class MissingSettingError < Error
     def initialize(scope)
-      super("Missing setting: #{scope.join('->')}")
+      super("Missing setting: #{scope.join("->")}")
     end
   end
 
   class NoHashSettingError < Error
     def initialize(scope)
-      super("No hash setting: #{scope.join('->')}")
+      super("No hash setting: #{scope.join("->")}")
     end
   end
 
@@ -27,9 +27,10 @@ module Yondu
       value = @config
 
       keys.each do |key|
-        raise NoHashSettingError.new(scope) unless value.is_a?(Hash)
+        raise NoHashSettingError, scope unless value.is_a?(Hash)
+
         scope << key
-        value = value.fetch(key) { raise MissingSettingError.new(scope) }
+        value = value.fetch(key) { raise MissingSettingError, scope }
       end
 
       value
