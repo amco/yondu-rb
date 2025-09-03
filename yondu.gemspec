@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "Settings object for extending configuration"
   spec.homepage = "https://github.com/amco/yondu-rb"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.7.0"
+  spec.required_ruby_version = ">= 3.2"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
   # to allow pushing to a single host or delete this section to allow pushing to any host.
